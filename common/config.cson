@@ -1,0 +1,72 @@
+"*":
+  "atom-beautify":
+    css:
+      align_assignments: true
+      convert_quotes: "single"
+      preserve_newlines: true
+    js:
+      end_with_newline: true
+      jslint_happy: true
+      keep_array_indentation: true
+      space_after_anon_function: true
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    closeEmptyWindows: false
+    projectHome: "/home/torgny/git"
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Input"
+    invisibles: {}
+    lineHeight: 1.5
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
+    preferredLineLength: 120
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 4
+    zoomFontWhenCtrlScrolling: false
+  linter:
+    showErrorPanel: false
+  "linter-js-standard":
+    checkStyleDevDependencies: true
+    honorStyleSettings: true
+    style: "semi-standard"
+  minimap:
+    plugins:
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  pigments:
+    supportedFiletypes: [
+      "*.css"
+      "*.sass"
+      "*.styl"
+      "*.scss"
+      "*.stylus"
+      "*.less"
+    ]
+  "tree-view":
+    hideIgnoredNames: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+".alloyxml.text":
+  editor:
+    preferredLineLength: 120
+".css.source.tss":
+  editor:
+    preferredLineLength: 120
+".git-commit.text":
+  editor:
+    preferredLineLength: 78
+".git-config.source":
+  editor:
+    preferredLineLength: 78
+".git-rebase.text":
+  editor:
+    preferredLineLength: 78
+".md.text":
+  editor:
+    preferredLineLength: 120
+"text.md":
+  editor:
+    softWrap: true

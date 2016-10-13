@@ -1,0 +1,6 @@
+blob-store
+compile-cache
+*.out
+packages
+recovery
+storage
