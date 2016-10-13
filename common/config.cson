@@ -4,6 +4,8 @@
       align_assignments: true
       convert_quotes: "single"
       preserve_newlines: true
+    general:
+      _analyticsUserId: "f68a47bc-f76d-45eb-ad01-ffbbf5c48bbc"
     js:
       end_with_newline: true
       jslint_happy: true
@@ -25,6 +27,8 @@
     softWrapAtPreferredLineLength: true
     softWrapHangingIndent: 4
     zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "ff6c8b93-716f-3e18-5d85-9e3b39142a20"
   linter:
     showErrorPanel: false
   "linter-js-standard":
