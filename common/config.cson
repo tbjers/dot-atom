@@ -35,6 +35,8 @@
     checkStyleDevDependencies: true
     honorStyleSettings: true
     style: "semi-standard"
+  "linter-puppet":
+    puppetExecutablePath: "/usr/bin/puppet"
   minimap:
     plugins:
       pigments: true
