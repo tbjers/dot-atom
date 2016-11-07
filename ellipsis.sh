@@ -31,7 +31,7 @@ pkg.install() {
             docblockr git-log language-docker language-scala language-spacebars linter \
             linter-docker linter-eslint markdown-scroll-sync markdown-writer \
             merge-conflicts minimap minimap-pigments octocat-syntax open-recent pigments sort-lines \
-            space-tab todo-show wordcount
+            space-tab todo-show wordcount language-vue
         else
           echo "Atom $RPM_VERSION is already installed, skipping."
         fi
