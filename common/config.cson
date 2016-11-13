@@ -19,6 +19,7 @@
     telemetryConsent: "limited"
   editor:
     fontFamily: "Input"
+    fontSize: 11
     invisibles: {}
     lineHeight: 1.5
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
