@@ -36,6 +36,9 @@ pkg.install() {
           echo "Atom $RPM_VERSION is already installed, skipping."
         fi
       fi
+      if utils.cmd_exists pacman; then
+        sudo pacman -Sy --noconfirm atom
+      fi
       ;;
   esac
 }
