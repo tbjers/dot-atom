@@ -17,11 +17,10 @@
     closeEmptyWindows: false
     projectHome: "/home/torgny/git"
     telemetryConsent: "limited"
+    warnOnLargeFileLimit: 3
   editor:
     fontFamily: "Input"
-    fontSize: 11
     invisibles: {}
-    lineHeight: 1.5
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 120
     showInvisibles: true
