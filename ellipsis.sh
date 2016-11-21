@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 #
 # tbjers/dot-atom ellipsis package
+ATOM_PACKAGES="Stylus atom-beautify atom-jade atom-wallaby bottom-dock case-conversion
+               docblockr git-log language-docker language-scala language-spacebars linter
+               linter-docker linter-eslint markdown-scroll-sync markdown-writer
+               merge-conflicts minimap minimap-pigments octocat-syntax open-recent pigments
+               sort-lines space-tab todo-show wordcount language-vue editorconfig 
+               language-elixir language-gettext"
 
 pkg.link() {
   files=(config.cson init.coffee keymap.cson snippets.cson styles.less)
@@ -26,18 +32,14 @@ pkg.install() {
         PACKAGE="atom-${RPM_VERSION/v/}"
         if [[ ! -z "`rpm -q $PACKAGE | head -n 1 | grep 'not installed'`" ]]; then
           sudo dnf install -y --allowerasing pygtk2 libgnome pygpgme "${RPM_FILE}"
-          apm upgrade --no-confirm --no-color \
-            Stylus atom-beautify atom-jade atom-wallaby bottom-dock case-conversion \
-            docblockr git-log language-docker language-scala language-spacebars linter \
-            linter-docker linter-eslint markdown-scroll-sync markdown-writer \
-            merge-conflicts minimap minimap-pigments octocat-syntax open-recent pigments sort-lines \
-            space-tab todo-show wordcount language-vue editorconfig
+          apm upgrade --no-confirm --no-color $ATOM_PACKAGES
         else
           echo "Atom $RPM_VERSION is already installed, skipping."
         fi
       fi
       if utils.cmd_exists pacman; then
         sudo pacman -Sy --noconfirm atom
+        apm upgrade --no-confirm --no-color $ATOM_PACKAGES
       fi
       ;;
   esac
@@ -45,5 +47,5 @@ pkg.install() {
 
 pkg.pull() {
   git pull
-  apm upgrade --no-confirm --no-color
+  apm upgrade --no-confirm --no-color $ATOM_PACKAGES
 }
