@@ -20,7 +20,7 @@
     warnOnLargeFileLimit: 3
   editor:
     fontFamily: "Input"
-    fontSize: 10
+    fontSize: 11
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 120
