@@ -17,11 +17,11 @@ pkg.link() {
 
 pkg.install() {
   mkdir -p $HOME/.atom
-  echo "FOO!"
   case $(os.platform) in
     osx)
       if utils.cmd_exists brew; then
         brew cask install --appdir="/Applications" atom
+        apm install --no-confirm --no-color $ATOM_PACKAGES
       else
         echo "Cannot automatically install Atom without Homebrew."
       fi
@@ -33,21 +33,20 @@ pkg.install() {
         PACKAGE="atom-${RPM_VERSION/v/}"
         if [[ ! -z "`rpm -q $PACKAGE | head -n 1 | grep 'not installed'`" ]]; then
           sudo dnf install -y --allowerasing pygtk2 libgnome pygpgme "${RPM_FILE}"
-          apm upgrade --no-confirm --no-color $ATOM_PACKAGES
+          apm install --no-confirm --no-color $ATOM_PACKAGES
         else
           echo "Atom $RPM_VERSION is already installed, skipping."
         fi
       fi
       if utils.cmd_exists pacman; then
         sudo pacman -Sy --noconfirm atom
-        apm upgrade --no-confirm --no-color $ATOM_PACKAGES
+        apm install --no-confirm --no-color $ATOM_PACKAGES
       fi
       ;;
   esac
 }
 
 pkg.pull() {
-  echo "BAR!"
   git pull \
     && apm upgrade --no-confirm --no-color $ATOM_PACKAGES
 }
