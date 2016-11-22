@@ -20,6 +20,7 @@
     warnOnLargeFileLimit: 3
   editor:
     fontFamily: "Input"
+    fontSize: 10
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 120
@@ -31,6 +32,8 @@
     userId: "ff6c8b93-716f-3e18-5d85-9e3b39142a20"
   linter:
     showErrorPanel: false
+  "linter-eslint":
+    lintHtmlFiles: true
   "linter-js-standard":
     checkStyleDevDependencies: true
     honorStyleSettings: true
