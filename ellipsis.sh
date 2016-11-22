@@ -17,6 +17,7 @@ pkg.link() {
 
 pkg.install() {
   mkdir -p $HOME/.atom
+  echo "FOO!"
   case $(os.platform) in
     osx)
       if utils.cmd_exists brew; then
@@ -46,6 +47,7 @@ pkg.install() {
 }
 
 pkg.pull() {
+  echo "BAR!"
   git pull \
-    && apm install --no-confirm --no-color $ATOM_PACKAGES
+    && apm upgrade --no-confirm --no-color $ATOM_PACKAGES
 }
