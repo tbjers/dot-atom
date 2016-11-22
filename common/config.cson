@@ -19,8 +19,8 @@
     telemetryConsent: "limited"
     warnOnLargeFileLimit: 3
   editor:
-    fontFamily: "Input"
-    fontSize: 11
+    fontFamily: "Input Mono"
+    fontSize: 13
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 120
