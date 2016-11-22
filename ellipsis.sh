@@ -46,6 +46,6 @@ pkg.install() {
 }
 
 pkg.pull() {
-  git pull
-  apm upgrade --no-confirm --no-color $ATOM_PACKAGES
+  git pull \
+    && apm install --no-confirm --no-color $ATOM_PACKAGES
 }
