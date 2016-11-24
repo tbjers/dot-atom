@@ -9,28 +9,40 @@
  * http://lesscss.org
  */
 
-
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-.tree-view {
-  // background-color: whitesmoke;
-  // font-family: 'Source Sans Pro';
-  // font-size: 13px;
-  font-size: 11px;
-  font-family: 'Input Sans';
-}
+ @ui-font-size: 1.35rem;
 
 // style the background and foreground colors on the atom-text-editor-element itself
 atom-text-editor {
-  // color: white;
-  // background-color: hsl(180, 24%, 12%);
+  font-size: @ui-font-size * 1.20;
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
 atom-text-editor::shadow .cursor {
-  // border-color: red;
+}
+
+.overlay .select-list ol.list-group li,
+.overlay.select-list ol.list-group li {
+  font-family: 'Input Sans';
+  font-size: @ui-font-size;
+}
+
+.status-bar {
+  font-family: 'Input Sans';
+  font-size: @ui-font-size;
+  height: @ui-font-size * 2.6;
+  line-height: @ui-font-size * 2.6 - 4;
+}
+
+.tab-bar {
+  height: 4rem;
+}
+.tab-bar .tab, .tab-bar .tab.active {
+  font-family: 'Input Sans';
+  font-size: @ui-font-size;
+  height: @ui-font-size * 3;
+}
+
+.tree-view {
+  font-family: 'Input Sans';
+  font-size: @ui-font-size;
 }

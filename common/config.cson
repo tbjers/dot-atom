@@ -44,6 +44,7 @@
     plugins:
       pigments: true
       pigmentsDecorationsZIndex: 0
+  "one-dark-ui": {}
   pigments:
     supportedFiletypes: [
       "*.css"

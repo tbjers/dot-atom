@@ -28,6 +28,7 @@ pkg.install() {
       ;;
     linux)
       if utils.cmd_exists dnf; then
+        sudo dnf install -y --allowerasing jq
         RPM_FILE="`curl -s https://api.github.com/repos/atom/atom/releases | jq '[.[] | select(.prerelease == false)] | [.[] | .assets[] | select(.browser_download_url | endswith(".x86_64.rpm")).browser_download_url][0]' | tr -d '\"'`"
         RPM_VERSION="`echo $RPM_FILE | grep -o '/v[0-9][^/]\+/' | cut -d '/' -f 2`"
         PACKAGE="atom-${RPM_VERSION/v/}"
