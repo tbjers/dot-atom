@@ -9,40 +9,22 @@
  * http://lesscss.org
  */
 
- @ui-font-size: 1.35rem;
-
-// style the background and foreground colors on the atom-text-editor-element itself
-atom-text-editor {
-  font-size: @ui-font-size * 1.20;
-}
-
-// To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
-}
-
 .overlay .select-list ol.list-group li,
 .overlay.select-list ol.list-group li {
   font-family: 'Input Sans';
-  font-size: @ui-font-size;
+}
+
+.tab-bar .tab, .tab-bar .tab.active {
+  font-family: 'Input Sans Narrow';
+  font-size: 100%;
 }
 
 .status-bar {
-  font-family: 'Input Sans';
-  font-size: @ui-font-size;
-  height: @ui-font-size * 2.6;
-  line-height: @ui-font-size * 2.6 - 4;
-}
-
-.tab-bar {
-  height: 4rem;
-}
-.tab-bar .tab, .tab-bar .tab.active {
-  font-family: 'Input Sans';
-  font-size: @ui-font-size;
-  height: @ui-font-size * 3;
+  font-family: 'Input Sans Narrow';
+  font-size: 85%;
 }
 
 .tree-view {
-  font-family: 'Input Sans';
-  font-size: @ui-font-size;
+  font-family: 'Input Sans Narrow';
+  font-size: 85%;
 }
