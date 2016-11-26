@@ -15,12 +15,15 @@
     audioBeep: false
     autoHideMenuBar: true
     closeEmptyWindows: false
+    disabledPackages: [
+      "whitespace"
+    ]
     projectHome: "/home/torgny/git"
     telemetryConsent: "limited"
     warnOnLargeFileLimit: 3
   editor:
     fontFamily: "Input Mono"
-    fontSize: 11
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.6
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
