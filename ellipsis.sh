@@ -6,7 +6,7 @@ ATOM_PACKAGES="Stylus atom-beautify atom-jade atom-wallaby bottom-dock case-conv
                linter-docker linter-eslint markdown-scroll-sync markdown-writer
                merge-conflicts minimap minimap-pigments octocat-syntax open-recent pigments
                sort-lines space-tab todo-show wordcount language-vue editorconfig 
-               language-elixir language-gettext hidpi"
+               language-elixir language-gettext hidpi linter-elixirc autocomplete-elixir"
 
 pkg.link() {
   files=(config.cson init.coffee keymap.cson snippets.cson styles.less)

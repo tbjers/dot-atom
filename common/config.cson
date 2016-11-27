@@ -11,6 +11,9 @@
       jslint_happy: true
       keep_array_indentation: true
       space_after_anon_function: true
+  "autocomplete-elixir":
+    elixirPath: "/usr/local/bin/elixir"
+    erlangHome: "/usr/bin"
   core:
     audioBeep: false
     autoHideMenuBar: true
@@ -46,6 +49,7 @@
   "linter-puppet":
     puppetExecutablePath: "/usr/bin/puppet"
   minimap:
+    absoluteMode: true
     plugins:
       pigments: true
       pigmentsDecorationsZIndex: 0
