@@ -44,8 +44,8 @@ pkg.install() {
         DEB_FILE="`curl -s https://api.github.com/repos/atom/atom/releases | jq '[.[] | select(.prerelease == false)] | [.[] | .assets[] | select(.browser_download_url | endswith("-amd64.deb")).browser_download_url][0]' | tr -d '\"'`"
         DEB_VERSION="`echo $DEB_FILE | grep -o '/v[0-9][^/]\+/' | cut -d '/' -f 2`"
         PACKAGE="atom-${DEB_VERSION/v/}"
-        if [[ ! -z "`rpm -q $PACKAGE | head -n 1 | grep 'not installed'`" ]]; then
-          sudo apt-get install -y pygtk2 libgnome pygpgme "${DEB_FILE}"
+        if [[ ! -z "`dpkg -s $PACKAGE 2>&1 | head -n 1 | grep 'not installed'`" ]]; then
+          FILE=`mktemp`; curl -J -L "$DEB_FILE" -o "$FILE" && sudo dpkg -i "$FILE"; rm "$FILE"
           apm install --no-confirm --no-color $ATOM_PACKAGES
         else
           echo "Atom $RPM_VERSION is already installed, skipping."
