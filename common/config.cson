@@ -18,6 +18,19 @@
     audioBeep: false
     autoHideMenuBar: true
     closeEmptyWindows: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "whitespace"
     ]
@@ -53,6 +66,9 @@
     plugins:
       pigments: true
       pigmentsDecorationsZIndex: 0
+  nuclide:
+    "nuclide-health":
+      toolbarJewel: "CPU"
   pigments:
     supportedFiletypes: [
       "*.css"
