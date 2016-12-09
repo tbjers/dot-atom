@@ -12,21 +12,35 @@
       keep_array_indentation: true
       space_after_anon_function: true
   "autocomplete-elixir":
-    elixirPath: "/usr/local/bin/elixir"
+    elixirPath: "/usr/bin/elixir"
     erlangHome: "/usr/bin"
   core:
     audioBeep: false
     autoHideMenuBar: true
     closeEmptyWindows: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "whitespace"
+      "nuclide-format-js"
+      "nuclide"
     ]
     projectHome: "/home/torgny/git"
     telemetryConsent: "limited"
     warnOnLargeFileLimit: 3
   editor:
     fontFamily: "Input Mono"
-    fontSize: 12
     invisibles: {}
     lineHeight: 1.6
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
@@ -37,6 +51,7 @@
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "ff6c8b93-716f-3e18-5d85-9e3b39142a20"
+  "git-plus": {}
   hidpi: {}
   linter:
     showErrorPanel: false
@@ -53,6 +68,11 @@
     plugins:
       pigments: true
       pigmentsDecorationsZIndex: 0
+  nuclide:
+    "nuclide-debugger-node": {}
+    "nuclide-health":
+      toolbarJewel: "CPU"
+    "nuclide-source-control-side-bar": {}
   pigments:
     supportedFiletypes: [
       "*.css"
@@ -62,6 +82,9 @@
       "*.stylus"
       "*.less"
     ]
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
   "tree-view":
     hideIgnoredNames: true
     squashDirectoryNames: true
