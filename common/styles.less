@@ -28,3 +28,16 @@
   font-family: 'Input Sans Narrow';
   font-size: 90%;
 }
+
+.scrollbars-visible-always {
+    .tree-view-scroller {
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0.85rem;
+            height: 0.85rem;
+        }
+        &:hover::-webkit-scrollbar {
+            display: block;
+        }
+    }
+}
