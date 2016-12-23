@@ -41,8 +41,8 @@
     warnOnLargeFileLimit: 3
   editor:
     fontFamily: "Input Mono"
+    fontSize: 12
     invisibles: {}
-    lineHeight: 1.6
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 120
     showInvisibles: true
