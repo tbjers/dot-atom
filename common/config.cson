@@ -12,7 +12,7 @@
       keep_array_indentation: true
       space_after_anon_function: true
   "autocomplete-elixir":
-    elixirPath: "/usr/bin/elixir"
+    elixirPath: ""
     erlangHome: "/usr/bin"
   core:
     audioBeep: false
