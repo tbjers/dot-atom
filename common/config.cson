@@ -38,6 +38,10 @@
     ]
     projectHome: "/home/torgny/git"
     telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
     warnOnLargeFileLimit: 3
   editor:
     fontFamily: "Input Mono"
@@ -63,6 +67,10 @@
     style: "semi-standard"
   "linter-puppet":
     puppetExecutablePath: "/usr/bin/puppet"
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-ui-default":
+    showPanel: true
   minimap:
     absoluteMode: true
     plugins:
