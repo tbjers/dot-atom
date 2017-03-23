@@ -35,34 +35,48 @@
       "whitespace"
       "nuclide-format-js"
       "nuclide"
+      "linter-phpmd"
+      "linter-php"
     ]
     projectHome: "/home/torgny/git"
     telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+    useCustomTitleBar: true
     warnOnLargeFileLimit: 3
   editor:
-    fontFamily: "Input Mono"
-    fontSize: 12
+    fontFamily: "Input"
     invisibles: {}
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…_"
     preferredLineLength: 120
+    scrollPastEnd: true
     showInvisibles: true
     softWrapAtPreferredLineLength: true
-    softWrapHangingIndent: 4
+    softWrapHangingIndent: 2
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "ff6c8b93-716f-3e18-5d85-9e3b39142a20"
   "git-plus": {}
   hidpi: {}
   linter:
+    errorPanelHeight: 312
     showErrorPanel: false
+    showErrorTabLine: true
   "linter-eslint":
     lintHtmlFiles: true
   "linter-js-standard":
     checkStyleDevDependencies: true
     honorStyleSettings: true
     style: "semi-standard"
+  "linter-phpcs":
+    executablePath: "/Users/tbjers/.composer/vendor/bin/phpcs"
   "linter-puppet":
     puppetExecutablePath: "/usr/bin/puppet"
+  "linter-shellcheck":
+    enableNotice: true
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   minimap:
     absoluteMode: true
     plugins:
@@ -73,6 +87,8 @@
     "nuclide-health":
       toolbarJewel: "CPU"
     "nuclide-source-control-side-bar": {}
+  "one-dark-ui": {}
+  "one-light-ui": {}
   pigments:
     supportedFiletypes: [
       "*.css"
