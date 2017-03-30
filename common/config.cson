@@ -60,10 +60,7 @@
     userId: "ff6c8b93-716f-3e18-5d85-9e3b39142a20"
   "git-plus": {}
   hidpi: {}
-  linter:
-    errorPanelHeight: 312
-    showErrorPanel: false
-    showErrorTabLine: true
+  linter: {}
   "linter-eslint":
     lintHtmlFiles: true
   "linter-js-standard":
@@ -74,11 +71,11 @@
     executablePath: "/Users/tbjers/.composer/vendor/bin/phpcs"
   "linter-puppet":
     puppetExecutablePath: "/usr/bin/puppet"
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
   "linter-shellcheck":
     enableNotice: true
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
-  "linter-rubocop":
-    disableWhenNoConfigFile: true
   "linter-ui-default":
     showPanel: true
   minimap:
